@@ -1,0 +1,170 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Section Styles */
+section {
+  padding: 30px 0;
+  background-image: url(''); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.section-header h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #f00a0a;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-header p {
+  font-size: 1.2em;
+  color: #3df185;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ... rest of the CSS remains unchanged ... */
+
+
+/* Reset CSS */
+/* ... (unchanged) ... */
+
+/* Global Styles */
+/* ... (unchanged) ... */
+
+/* Section Styles */
+/* ... (unchanged) ... */
+
+/* Contact Info Styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-info-icon {
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact-info-icon i {
+  /* Styling for Font Awesome icons */
+  font-size: 20px;
+}
+
+.contact-info-content h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-info-content p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Contact Form Styles */
+/* ... (unchanged) ... */
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(5px); /* Adding a blur effect for modern browsers */
+}
+
+.contact-form h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  outline: none;
+  border-color: #1da9c0;
+}
+
+.input-box span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.input-box input:focus ~ span,
+.input-box textarea:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:valid ~ span {
+  top: -10px;
+  font-size: 0.8em;
+  color: #1da9c0;
+}
+
+.input-box input[type="submit"] {
+  background-color: #1da9c0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.input-box input[type="submit"]:hover {
+  background-color: #138185;
+}

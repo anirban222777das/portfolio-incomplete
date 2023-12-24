@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>MY <span id="typing-effect"></span></h2>
+        <p>I'm available for all kind of collaborations and live projects with other teams.</p>
+      </div>
+
+      <div class="row">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="contact-info-content">
+              <h4>Address</h4>
+              <p>😏This is Confidential</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info-content">
+              <h4>Email</h4>
+              <p>anirban222777das@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-info-content">
+              <h4>Phone</h4>
+              <p>This is Confidential Too🤣The only way is Email</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <h2>Send Message(NO JS)</h2>
+            <div class="input-box">
+              <input type="text" required name="name">
+              <span>Name</span>
+            </div>
+            <div class="input-box">
+              <input type="email" required name="email">
+              <span>Email</span>
+            </div>
+            <div class="input-box">
+              <textarea required name="message"></textarea>
+              <span>Your Message or GALI/Slang</span>
+            </div>
+            <div class="input-box">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const text = "Contactt"; // Text to be typed out
+    let index = 0;
+
+    function type() {
+      document.getElementById('typing-effect').innerText += text[index];
+      index++;
+
+      if (index >= text.length) {
+        index = 0; // Reset index to loop the typing effect
+        document.getElementById('typing-effect').innerText = ''; // Clear the text for the next iteration
+      }
+    }
+
+    setInterval(type, 700); // Typing speed: 200 milliseconds per character
+  </script>
+
+</body>
+
+</html>

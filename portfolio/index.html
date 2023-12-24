@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Anirban's Personal Portfolio</title>
+    <style>
+      header, section, footer{
+        border-radius: 35px; /* Adjust the value as needed */
+      }
+
+      .button, .services__card, .skill__card, .portfolio__card, .client__card,.contact__me__btn,.btn {
+        border-radius: 28px; /* Adjust the value as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="section__container nav__container">
+        <div   class="nav__logo"><h2>MYhub</h2></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#">resume</a></li>
+          <li class="link"><a href="#">My Skills</a></li>
+          <li class="link"><a href="#">Portfolio</a></li>
+          <li class="link"><a href="#">Thank You</a></li>
+        </ul>
+        <a href="untitled folder/index.html"><button class="contact__me__btn">Click Here For Magic</button></a>
+      </nav>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <p>Hello, I am</p>
+          <h1 id="typing-text"></h1>
+          <a href="https://www.youtube.com/@AnirbanDYT/featured"><button class="btn">My content</button></a>
+        </div>
+      </div>
+    </header>
+    <script>
+      const text = "Anirban";
+      let index = 0;
+      let timer;
+    
+      function type() {
+        const typingText = document.getElementById("typing-text");
+        typingText.textContent += text[index];
+        index++;
+    
+        if (index >= text.length) {
+          clearInterval(timer);
+          setTimeout(resetText, 2000); // Delay before resetting the text
+        }
+      }
+    
+      function resetText() {
+        const typingText = document.getElementById("typing-text");
+        typingText.textContent = "";
+        index = 0;
+        timer = setInterval(type, 100); // Adjust typing speed (interval) as needed
+      }
+    
+      // Start typing effect when the page loads
+      timer = setInterval(type, 100); // Adjust typing speed (interval) as needed
+    </script>
+    
+
+    <section class="services">
+      <div class="section__container services__container">
+        <div class="services__content">
+          <h2 class="section__title">My Knowledges </h2>
+          <p class="section__subtitle">
+            I am a  Beginer Web designer and developer. I also provide
+            source code of my works. I have done lots of design
+            projects for gain more knowledge about web designing.Making websites help me to show my creativity to the world......
+          </p>
+          <a href="sourcecode.html"><button class="btn">Source Code of This Website</button></a>
+        </div>
+        <div class="services__grid">
+          <div class="services__card">
+            <div class="icon">
+              <img src="webdesign.png" alt="service" />
+            </div>
+            <div class="services__card__content">
+              <h4>Web Design</h4>
+              <p>
+                All of my designs are modern and completely genuine. seriously i am a beginer in this field.
+              </p>
+            </div>
+          </div>
+          <div class="services__card">
+            <div class="icon">
+              <img src="webdesign.png" alt="service" />
+            </div>
+            <div class="services__card__content">
+              <h4>Animation</h4>
+              <p>
+                I can make 2d and 3d animations,also i can make 3d Models.
+              </p>
+            </div>
+          </div>
+          <div class="services__card">
+            <div class="icon">
+              <img src="ppt.png" alt="service" />
+            </div>
+            <div class="services__card__content">
+              <h4>PPT Making</h4>
+              <p>
+                I can make professional PPT ,Animated PPT and many other types of PPT s.   
+                         </p>
+            </div>
+          </div>
+          <div class="services__card">
+            <div class="icon">
+              <img src="web DEVE.webp" alt="service" />
+            </div>
+            <div class="services__card__content">
+              <h4>Web Development</h4>
+              <p>
+                Website development is a very hard work to do.I dont telling you that i am good at it.Still i am learning about this.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="section__container skills__container">
+        <h2 class="section__title">My Skills</h2>
+        <p class="section__subtitle">
+          I use various types of code editor and softwares to make this types of Websites and Animations:-
+        </p>
+        <div class="skills__grid">
+          <div class="skill__card">
+            <img src="vscode.svg.png" alt="skill" />
+            <p>Visual Studio Code</p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+              <i class="ri-star-line"></i>
+            </div>
+          </div>
+          <div class="skill__card">
+            <img src="atom.png" alt="skill" />
+            <p>Atom</p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+              <i class="ri-star-line"></i>
+            </div>
+          </div>
+          <div class="skill__card">
+            <img src="xcode.png" alt="skill" />
+            <p>Xcode</p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+              <i class="ri-star-line"></i>
+            </div>
+          </div>
+          <div class="skill__card">
+            <img src="adobe-photoshop-logo-0.png" alt="skill" />
+            <p>Adobe Photoshop</p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+              <i class="ri-star-line"></i>
+            </div>
+          </div>
+          <div class="skill__card">
+            <img src="Blender_logo_no_text.svg.png" alt="skill" />
+            <p>Blender</p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+              <i class="ri-star-line"></i>
+            </div>
+          </div>
+          <div class="skill__card">
+            <img src="Microsoft_PowerPoint_Logo.png" alt="skill" />
+            <p>Ms PowerPoint</p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+              <i class="ri-star-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="section__container portfolio__container">
+        <h2 class="section__title">My 3D Renders</h2>
+        <p class="section__subtitle">
+          This is all of my 3d Models that i make for fun:-
+        </p>
+        <div class="portfolio__nav">
+
+        </div>
+        <div class="portfolio__grid">
+          <div class="portfolio__card">
+          <img src="imge1.jpeg" alt="First Work"/>
+          </div>
+          <div class="portfolio__card">
+            <img src="image2.jpeg" alt="Second Work" />
+          </div>
+          <div class="portfolio__card">
+            <img src="image3.jpeg" alt="Third Work" />
+          </div>
+          <div class="portfolio__card">
+            <img src="image4.jpeg" alt="Forth Work" />
+          </div>
+          <div class="portfolio__card">
+         <img src="image5.jpeg" alt="Fifth Work" />
+          </div>
+          <div class="portfolio__card">
+            <img src="image6.jpeg" alt="Sixth Work" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="section__container clients__container">
+        <h2 class="section__title">What My Friends Says About my Work</h2>
+        <p class="section__subtitle">
+          Check out what my friends says about my recent works.
+        </p>
+        <div class="clients__grid">
+          <div class="client__card">
+            <p>
+             <h5>Anirban has crafted an impressive site. The design is clean, intuitive, and responsive across devices. His attention to detail and commitment to user satisfaction are evident. While there's room for growth, Anirban's debut showcases a promising start to his career, blending creativity with functionality. Looking forward to seeing more from this budding developer!</h5>
+            </p>
+            <div class="client__card__footer">
+              <img src="animesh.jpeg" alt="client" />
+              <div class="client__details">
+                <h4>Animesh Pramanick</h4>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="client__card">
+            <p>
+            <h5>I've known Anirban for some time, and let me drop a bomb – the guy's a web sorcerer! His HTML and CSS skills? Mind-blowing! The perplexity of his design intricacies is like trying to decode a cryptic puzzle.</h5>
+
+              <h6>Sure, his JavaScript journey is a bit like a rollercoaster, but here's the burstiness – Anirban's commitment to learning is like a firework show on steroids. This dude is a zeal-infused developer, churning out high-quality wizardry.
+              
+              Anirban's on a warp-speed trajectory to web development stardom. The perplexity of his improvement journey and his current skill arsenal? Picture this: a tech team's dream come true.</h6>
+            </p>
+            <div class="client__card__footer">
+              <img src="shreojit.jpeg" alt="client" />
+              <div class="client__details">
+                <h4>Shreyojit Das</h4>
+                <p>Project lead of "rev restro"</p>
+              </div>
+            </div>
+          </div>
+          <div class="client__card">
+            <p>
+              <h5>I've had the pleasure of knowing Anirban for quite some time, and I must say, he is a highly skilled web developer. His expertise in HTML and CSS is truly commendable. Anirban's meticulous approach to design and attention to detail shines through in every project he undertakes.</h5>
+              <h5>While his JavaScript skills may still be developing, I've witnessed his determination to learn and grow in this area. Anirban is a dedicated and passionate developer who consistently delivers high-quality work.</h5>
+              <h5>Anirban is on the path to becoming a well-rounded web developer.His commitment to improvement and his current abilities make him a valuable asset to any web development team.</h5>
+            </p>
+            <div class="client__card__footer">
+              <img src="Unknown.jpeg" alt="client" />
+              <div class="client__details">
+                <h3>Souvik Ghosh</h3>
+                <p>Robotics Expert</p>
+              </div>
+            </div>
+          </div>
+          <div class="client__card">
+            <p>
+<h5>Anirban is a skilled web developer... He has good skills in HTML and css.. Also he is trying to improve himself in Java script.I think his work will have a good influence in the future</h5>
+            </p>
+            <div class="client__card__footer">
+              <img src="ankur.jpeg" alt="client" />
+              <div class="client__details">
+                <h4>Ankur Das Gupta</h4>
+                <p>Software Engineer</p>
+        </div>
+      </div>
+    </div>
+    <div class="client__card">
+      <p>
+        <h5>You are an outstanding web developer, showcasing a remarkable blend of technical expertise and creativity. proficiency in front-end technologies, such as HTML, CSS, and JavaScript, is truly commendable. The ability to craft visually appealing and user-friendly interfaces reflects a keen eye for design.</h5>
+
+
+      <div class="client__card__footer">
+        <img src="aniket.jpeg" alt="client" />
+        <div class="client__details">
+          <h4>Aniket Sharma</h4>
+          <p>Software Engineer</p>
+  </div>
+</div>
+</div><div class="client__card">
+  <p>
+    <h5>I recently had the pleasure of working with Anirban Das, and I am thoroughly impressed with the level of expertise and professionalism demonstrated throughout the entire web development process. From conception to execution, the experience was seamless and highly collaborative.</h5>
+
+     <h5> Anirban Das showcased a deep understanding of the latest web development technologies and trends, implementing a modern and user-friendly design for our website. The attention to detail was evident in every aspect, from responsive design elements to optimized performance across various devices.</h5>
+  </p>
+  <div class="client__card__footer">
+    <img src="subhankar.jpeg" alt="client" />
+    <div class="client__details">
+      <h4>Shuvankar Poddar</h4>
+      <p>Biomedical Engineer</p>
+</div>
+</div>
+</div>
+
+    </section>
+
+    <section class="contact">
+      <div class="section__container contact__container">
+        <h2 class="section__title">
+          I am very interested to work with teams or other Developers
+        </h2>
+        <a href="contact.html"><button class="btn">Contact Me</button></a>
+        
+      </div>
+    </section>
+
+    <footer> 
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h2>Anirban Das</h2>
+          <p>Subscribe my Youtube Chanel</p>
+          <form>
+            <input type="text" placeholder="Your Name" />
+            <button><i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+        <div class="footer__col">
+          <h4>My Skills</h4>
+          <p>Web Design</p>
+          <p>Animation</p>
+          <p>Designing</p>
+          <p>PPT Making</p>
+          <p>Web Development</p>
+        </div>
+        <div class="footer__col">
+          <h4>Details</h4>
+          <p>About ME</p>
+          <p>Contact</p>
+          <p>My Chanel</p>
+          <p>My Method to Learn Web Development</p>
+          <p>Motivtion</p>
+        </div>
+        <div class="footer__col">
+          <h4>Follow Me</h4>
+          
+        </div>
+      </div>
+      &copy;All copyrights reserved by Anirban.
+    </footer>
+  </body>
+</html>
